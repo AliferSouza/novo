@@ -4,7 +4,7 @@ font-size: 1rem;
 `
 
 
-export default function Footer(data, cardapioColor) {
+export default function FooterRodape(data, cardapioColor) {
 
   let footerRodape = ``;
   data.forEach((element) => {
