@@ -1,14 +1,14 @@
 import Button from "../componets/Button.js";
 import Produtos from "../componets/produtos.js";
 import Header from "../componets/Header.js";
-import FooterRodape from "../componets/footer.js";
+import FooterRodape from "../componets/FooterRodape.js";
 
 
 export default function Caradapio(data, cardapioColor, compararUrlEApi) {
   
 
    console.log(Button)
-     console.log(Footer)
+     console.log(FooterRodape)
   
     let dadoslanche = data.filter((item) => {
         return (item.Categoria === "Lanche" && (item.Quantidade > 0))
