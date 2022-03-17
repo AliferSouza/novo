@@ -6,13 +6,13 @@ font-size: 1rem;
 
 export default function Footer(data, cardapioColor) {
 
-  let footer = ``;
+  let footerRodape = ``;
   data.forEach((element) => {
-    footer += `
+    footerRodape += `
     <h5 style="${styleFooter} color: ${element.color}; ">
     ${element.Nome}
     </h5>
    `;
   });
-  return footer;
+  return footerRodape;
 }
