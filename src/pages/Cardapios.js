@@ -1,13 +1,15 @@
 import Button from "../componets/Button.js";
 import Produtos from "../componets/produtos.js";
 import Header from "../componets/Header.js";
-//import Footer from "../componets/footer.js";
+import Footer from "../componets/footer.js";
 
 
 export default function Caradapio(data, cardapioColor, compararUrlEApi) {
   
 
-
+   console.log(Button)
+     console.log(Footer)
+  
     let dadoslanche = data.filter((item) => {
         return (item.Categoria === "Lanche" && (item.Quantidade > 0))
     })
@@ -46,11 +48,19 @@ export default function Caradapio(data, cardapioColor, compararUrlEApi) {
              <br />
 
 
-             ${Button(cardapioColor)}
+             <div>
+               ${Button(cardapioColor)}
+             </div>
+             
+              <div>
+               ${Footer(compararUrlEApi, cardapioColor)}
+              </div>
+
+           
            
           
 
-             //${Footer(compararUrlEApi, cardapioColor)}
+            
 
           
       
